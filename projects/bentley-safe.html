@@ -8,128 +8,7 @@
   <title>BentleySafe — Finding safety faster | Brigitte Perrin</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/styles.css">
-  <style id="bentley-case-styles">
-/* BentleySafe editorial case study — scoped to the single page */
-.bentley-case{--bc-blue:#1c47db;--bc-yellow:#f6c547;--bc-red:#f34b42;--bc-ink:#181818;--bc-cream:#f8f6f0}
-.bentley-case .bc-masthead{padding-top:24px}
-.bentley-case .bc-overline{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;padding:7px 0 26px}
-.bentley-case .bc-overline a{text-decoration:none;border-bottom:1px solid var(--bc-ink);padding-bottom:3px}
-.bentley-case .bc-overline span{color:var(--muted)}
-.bentley-case .bc-hero-grid{display:grid;grid-template-columns:1.19fr .81fr;min-height:670px;border:1px solid var(--bc-ink);background:#fffdf9}
-.bentley-case .bc-hero-copy{padding:56px 46px 62px;display:flex;flex-direction:column;justify-content:center}
-.bentley-case .bc-kicker{display:flex;align-items:center;gap:10px;font-weight:900;font-size:11px;letter-spacing:.095em;text-transform:uppercase;line-height:1.4}
-.bentley-case .bc-kicker-square{width:11px;height:11px;flex:none;background:var(--bc-red);border:1px solid var(--bc-ink)}
-.bentley-case .bc-hero-copy h1{font-size:clamp(51px,5.4vw,85px);letter-spacing:-.078em;line-height:1.03;max-width:740px;margin:32px 0 26px;font-weight:900}
-.bentley-case .bc-hero-copy h1 em{font-family:Georgia,'Times New Roman',serif;color:var(--bc-blue);font-weight:normal;letter-spacing:-.085em}
-.bentley-case .bc-period{color:var(--bc-red)}
-.bentley-case .bc-dek{font-size:19px;line-height:1.55;max-width:540px;margin:0;color:#3b3b37}
-.bentley-case .bc-art-panel{min-height:600px;position:relative;overflow:hidden;border-left:1px solid var(--bc-ink);background:var(--bc-yellow);isolation:isolate}
-.bentley-case .bc-art-top,.bentley-case .bc-art-bottom{position:absolute;z-index:7;font-size:10px;font-weight:900;letter-spacing:.12em;left:25px;top:25px}
-.bentley-case .bc-art-bottom{top:auto;bottom:24px;left:auto;right:24px;color:white}
-.bentley-case .bc-art-disc{position:absolute;background:var(--bc-red);width:370px;height:370px;border-radius:50%;top:14%;right:-125px;border:1px solid var(--bc-ink)}
-.bentley-case .bc-art-arch{position:absolute;bottom:0;left:-80px;background:var(--bc-blue);height:78%;width:77%;border-radius:270px 270px 0 0;border:1px solid var(--bc-ink)}
-.bentley-case .bc-art-star{position:absolute;right:26px;bottom:19%;font-size:105px;font-weight:900;color:#fffdf9;line-height:1}
-.bentley-case .bc-art-device{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-44%) rotate(-8deg);height:415px;width:240px;background:#fffefa;border:9px solid #1b1b1b;border-radius:34px;box-shadow:21px 19px 0 rgba(0,0,0,.18);padding:32px 17px 18px;display:flex;flex-direction:column;gap:16px}
-.bentley-case .bc-art-device:before{content:'';position:absolute;width:72px;height:12px;background:#1b1b1b;border-radius:0 0 9px 9px;top:-1px;left:50%;transform:translateX(-50%)}
-.bentley-case .bc-art-device-label{font-size:12px;font-weight:900;letter-spacing:.18em;border-bottom:1px solid #ddd;padding-bottom:13px;color:var(--bc-ink)}
-.bentley-case .bc-art-device-call{display:flex;align-items:center;gap:9px;background:var(--bc-red);border:1px solid var(--bc-ink);padding:15px 9px;font-size:11px;font-weight:900;line-height:1.25}
-.bentley-case .bc-art-icon{display:grid;place-items:center;background:var(--bc-ink);color:white;width:26px;height:26px;border-radius:50%;font-size:17px;flex:none}
-.bentley-case .bc-art-device-row{height:12px;border-radius:2px;width:100%;background:#d7d9dd}
-.bentley-case .bc-art-device-row-short{width:66%}
-.bentley-case .bc-art-device-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:5px}
-.bentley-case .bc-art-device-grid i{display:block;height:47px;background:#ecedf2;border:1px solid #ddd}
-.bentley-case .bc-art-device-grid i:nth-child(2){background:#e0e8ff}.bentley-case .bc-art-device-grid i:nth-child(3){background:#ffdfb1}
-.bentley-case .bc-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--bc-ink);border-top:0;background:#fffdf9}
-.bentley-case .bc-facts>div{padding:22px 23px;min-width:0}
-.bentley-case .bc-facts>div:not(:last-child){border-right:1px solid var(--bc-ink)}
-.bentley-case .bc-facts span{display:block;font-size:10px;letter-spacing:.11em;font-weight:900;margin-bottom:8px;color:#666}
-.bentley-case .bc-facts strong{display:block;font-size:14px;line-height:1.38}
-.bentley-case .bc-container{display:grid;grid-template-columns:195px minmax(0,1fr);gap:68px;align-items:start;padding-top:100px}
-.bentley-case .bc-section-nav{position:sticky;top:30px;display:flex;flex-direction:column;gap:14px;font-size:12px;border-top:3px solid var(--bc-ink);padding-top:20px}
-.bentley-case .bc-section-nav>span{font-weight:900;letter-spacing:.1em;margin-bottom:15px;font-size:10px}
-.bentley-case .bc-section-nav a{text-decoration:none;font-weight:700;color:#5d5b57;padding:3px 0}
-.bentley-case .bc-section-nav a:hover{color:var(--bc-blue);text-decoration:underline}
-.bentley-case .bc-story{min-width:0}
-.bentley-case .bc-story-section{padding:0 0 105px;scroll-margin-top:40px}
-.bentley-case .bc-section-top{display:flex;align-items:center;gap:28px;margin-bottom:30px}
-.bentley-case .bc-section-index{white-space:nowrap;color:var(--bc-blue);font-weight:900;letter-spacing:.115em;font-size:11px}
-.bentley-case .bc-mini-rule{height:1px;background:var(--bc-ink);flex:1}
-.bentley-case .bc-story-section h2{font-size:clamp(38px,4.4vw,64px);letter-spacing:-.07em;line-height:1.08;margin:0 0 28px;font-weight:900;max-width:850px}
-.bentley-case .bc-story-section h2 em{font-family:Georgia,serif;font-weight:normal;color:var(--bc-blue);letter-spacing:-.06em}
-.bentley-case .bc-columns-text{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.bentley-case .bc-columns-text p{font-size:17px;line-height:1.7;margin:0;color:#393935}
-.bentley-case .bc-question{margin-top:40px;background:var(--bc-blue);padding:32px 38px;position:relative;overflow:hidden;color:#fff;min-height:208px}
-.bentley-case .bc-question>span,.bentley-case .bc-closing-quote>span{font-size:11px;letter-spacing:.12em;font-weight:900}
-.bentley-case .bc-question p{font-size:clamp(25px,3vw,40px);font-weight:900;line-height:1.22;letter-spacing:-.05em;max-width:700px;margin:16px 0 0;position:relative;z-index:2}
-.bentley-case .bc-question i{font-style:normal;font-size:250px;position:absolute;right:5px;top:-116px;opacity:.12;font-family:Georgia,serif}
-.bentley-case .bc-original-visual{margin:0 0 100px}
-.bentley-case .bc-original-image{display:flex;align-items:center;justify-content:center;background:#dae5ff;min-height:320px;border:1px solid var(--bc-ink);padding:24px}
-.bentley-case .bc-original-image img{max-height:520px;max-width:100%;object-fit:contain}
-.bentley-case .bc-original-visual figcaption,.bentley-case .bc-hierarchy figcaption{padding-top:10px;color:#62615c;font-size:12px;line-height:1.5}
-.bentley-case .bc-original-visual figcaption span{font-size:10px;font-weight:900;color:var(--bc-blue);letter-spacing:.13em;margin-right:10px}
-.bentley-case .bc-original-visual figcaption a{font-weight:800}
-.bentley-case .bc-section-lead{font-size:18px;line-height:1.65;max-width:800px;margin:0 0 33px;color:#4c4b47}
-.bentley-case .bc-methods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--bc-ink);background:#fffefa}
-.bentley-case .bc-method{padding:24px 20px 28px;min-height:260px;position:relative}
-.bentley-case .bc-method:not(:last-child){border-right:1px solid var(--bc-ink)}
-.bentley-case .bc-method:nth-child(2){background:#f5e7a7}.bentley-case .bc-method:nth-child(3){background:#ffd9d3}
-.bentley-case .bc-method-num{font-size:12px;font-weight:900;letter-spacing:.11em}
-.bentley-case .bc-method-icon{font-family:Georgia,serif;font-size:57px;line-height:1.1;color:var(--bc-blue);position:absolute;right:18px;top:17px}
-.bentley-case .bc-method h3{font-size:21px;line-height:1.1;letter-spacing:-.045em;margin:87px 0 11px}
-.bentley-case .bc-method p{font-size:14px;line-height:1.55;margin:0;color:#40403d}
-.bentley-case .bc-evidence-note{display:flex;align-items:flex-start;gap:14px;margin:20px 0 0;border-left:3px solid var(--bc-yellow);padding:11px 17px;background:#fff9e7}
-.bentley-case .bc-note-mark{font-size:23px;line-height:1}
-.bentley-case .bc-evidence-note p{font-size:13px;line-height:1.6;margin:0;color:#4d4b44}
-.bentley-case .bc-mapping{border-top:2px solid var(--bc-ink);margin:38px 0 60px}
-.bentley-case .bc-mapping-heading{display:grid;grid-template-columns:1fr 1fr;gap:54px;font-size:11px;font-weight:900;letter-spacing:.13em;padding:14px 14px 14px 48px;background:var(--bc-ink);color:white}
-.bentley-case .bc-mapping-row{display:grid;grid-template-columns:28px minmax(0,1fr) 36px minmax(0,1fr);gap:13px;align-items:start;border-bottom:1px solid var(--bc-ink);padding:27px 0}
-.bentley-case .bc-mapping-n{font-weight:900;font-size:13px;color:var(--bc-red)}
-.bentley-case .bc-mapping-row h3{font-size:19px;line-height:1.15;letter-spacing:-.04em;margin:0 0 10px}
-.bentley-case .bc-mapping-row p{font-size:14px;line-height:1.58;margin:0;color:#55534f}
-.bentley-case .bc-mapping-decision h3{color:var(--bc-blue)}
-.bentley-case .bc-mapping-arrow{font-size:31px;font-weight:900;color:var(--bc-red);line-height:1}
-.bentley-case .bc-hierarchy{margin:0}
-.bentley-case .bc-hierarchy-intro{border:1px solid var(--bc-ink);border-bottom:0;padding:27px 32px;background:#fffefa}
-.bentley-case .bc-hierarchy-intro>span{font-size:10px;font-weight:900;letter-spacing:.12em;color:var(--bc-blue)}
-.bentley-case .bc-hierarchy-intro h3{margin:12px 0;font-size:31px;letter-spacing:-.05em;line-height:1.14}
-.bentley-case .bc-hierarchy-intro p{margin:0;font-size:14px;color:#575551;max-width:650px}
-.bentley-case .bc-hierarchy-frame{background:#e4eaff;border:1px solid var(--bc-ink);padding:42px 34px 20px;text-align:center;overflow:hidden}
-.bentley-case .bc-hier-home{margin:auto;background:#fffefa;border:2px solid var(--bc-ink);padding:14px 20px 16px;width:min(290px,100%);box-shadow:6px 6px 0 var(--bc-yellow);display:flex;flex-direction:column;gap:4px}
-.bentley-case .bc-hier-line{background:var(--bc-blue);width:38px;height:5px;margin:0 auto 5px}
-.bentley-case .bc-hier-home strong{font-size:22px;letter-spacing:-.04em}
-.bentley-case .bc-hier-home span,.bentley-case .bc-hier-branches p{font-size:12px;color:#5b5853;margin:0}
-.bentley-case .bc-hier-tree{height:28px;width:2px;background:var(--bc-ink);margin:6px auto 0;position:relative}
-.bentley-case .bc-hier-tree:after{content:'';height:2px;position:absolute;bottom:0;left:-150px;width:302px;background:var(--bc-ink)}
-.bentley-case .bc-hier-branches{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.bentley-case .bc-hier-branches>div{border:2px solid var(--bc-ink);padding:24px 12px;min-width:0}
-.bentley-case .bc-hier-primary{background:var(--bc-red)}.bentley-case .bc-hier-secondary{background:var(--bc-yellow)}
-.bentley-case .bc-hier-pill{display:inline-block;border:1px solid var(--bc-ink);padding:3px 7px;font-size:9px;font-weight:900;letter-spacing:.1em;background:#fffefa;margin-bottom:12px}
-.bentley-case .bc-hier-branches strong{display:block;font-size:23px;letter-spacing:-.04em;line-height:1.1;margin-bottom:9px}
-.bentley-case .bc-hier-base{font-size:10px;letter-spacing:.1em;font-weight:900;padding-top:29px}
-.bentley-case .bc-hier-base span{color:var(--bc-red);font-size:14px;padding:0 7px}
-.bentley-case .bc-role-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.bentley-case .bc-contribution-list{border-top:2px solid var(--bc-ink)}
-.bentley-case .bc-contribution-list>div{display:grid;grid-template-columns:35px 1fr;gap:15px;border-bottom:1px solid var(--bc-ink);padding:17px 0}
-.bentley-case .bc-contribution-list span{font-size:12px;font-weight:900;color:var(--bc-red)}
-.bentley-case .bc-contribution-list p{font-size:16px;line-height:1.55;margin:0}
-.bentley-case .bc-next-study{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;background:#fffefa;border:1px solid var(--bc-ink);margin-top:35px;padding:30px}
-.bentley-case .bc-next-study span{font-size:11px;font-weight:900;letter-spacing:.1em;color:var(--bc-blue)}
-.bentley-case .bc-next-study h3{font-size:29px;letter-spacing:-.06em;line-height:1.13;margin:12px 0 0}
-.bentley-case .bc-next-study ul{margin:0;padding-left:20px;font-size:15px;line-height:1.65}
-.bentley-case .bc-next-study li{margin-bottom:8px}
-.bentley-case .bc-closing-quote{background:var(--bc-yellow);border:1px solid var(--bc-ink);min-height:270px;margin-top:45px;padding:38px;position:relative;overflow:hidden}
-.bentley-case .bc-closing-quote>span{position:relative;z-index:1}
-.bentley-case .bc-closing-quote p{font-size:clamp(28px,3.6vw,47px);font-weight:900;letter-spacing:-.06em;line-height:1.12;max-width:710px;position:relative;z-index:1;margin:27px 0 0}
-.bentley-case .bc-closing-quote em{font-family:Georgia,serif;color:var(--bc-blue);font-weight:normal}
-.bentley-case .bc-quote-decor{position:absolute;width:260px;height:260px;right:-92px;top:-76px;background:var(--bc-red);border-radius:50%;border:1px solid var(--bc-ink)}
-.bentley-case .bc-project-links{display:flex;flex-wrap:wrap;gap:25px;margin-top:20px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
-.bentley-case .bc-project-links a{text-decoration:none;border-bottom:1px solid var(--bc-ink);padding-bottom:4px}
-.bentley-case .outro{margin-top:4px}
-@media(max-width:1050px){.bentley-case .bc-container{gap:34px;grid-template-columns:160px minmax(0,1fr)}.bentley-case .bc-hero-grid{grid-template-columns:1.05fr .95fr}.bentley-case .bc-hero-copy{padding:45px 35px}.bentley-case .bc-hero-copy h1{font-size:clamp(47px,5vw,70px)}.bentley-case .bc-art-device{transform:translate(-50%,-44%) rotate(-8deg) scale(.85)}.bentley-case .bc-hero-grid{min-height:590px}}
-@media(max-width:790px){.bentley-case .bc-hero-grid{display:block}.bentley-case .bc-hero-copy{padding:42px 32px 50px}.bentley-case .bc-hero-copy h1{font-size:clamp(47px,8vw,75px)}.bentley-case .bc-art-panel{border-left:0;border-top:1px solid var(--bc-ink);min-height:390px}.bentley-case .bc-art-device{transform:translate(-50%,-45%) rotate(-8deg) scale(.75)}.bentley-case .bc-facts{grid-template-columns:1fr 1fr}.bentley-case .bc-facts>div:nth-child(2){border-right:0}.bentley-case .bc-facts>div:nth-child(-n+2){border-bottom:1px solid var(--bc-ink)}.bentley-case .bc-container{display:block;padding-top:60px}.bentley-case .bc-section-nav{position:static;display:flex;flex-direction:row;flex-wrap:wrap;column-gap:15px;row-gap:6px;margin-bottom:62px}.bentley-case .bc-section-nav>span{width:100%;margin-bottom:3px}.bentley-case .bc-story-section{padding-bottom:78px}}
-@media(max-width:590px){.bentley-case .bc-overline span{display:none}.bentley-case .bc-hero-copy{padding:35px 24px 40px}.bentley-case .bc-kicker{font-size:10px}.bentley-case .bc-hero-copy h1{font-size:clamp(40px,11vw,62px);line-height:1.06;margin:24px 0}.bentley-case .bc-dek{font-size:17px}.bentley-case .bc-facts>div{padding:17px 15px}.bentley-case .bc-facts strong{font-size:13px}.bentley-case .bc-facts span{font-size:9px}.bentley-case .bc-columns-text,.bentley-case .bc-methods,.bentley-case .bc-role-grid,.bentley-case .bc-next-study{grid-template-columns:1fr}.bentley-case .bc-columns-text{gap:17px}.bentley-case .bc-story-section h2{font-size:clamp(34px,9vw,48px)}.bentley-case .bc-method{min-height:0;padding:19px 22px 24px}.bentley-case .bc-method:not(:last-child){border-right:0;border-bottom:1px solid var(--bc-ink)}.bentley-case .bc-method h3{margin:26px 0 10px}.bentley-case .bc-method-icon{top:13px}.bentley-case .bc-question{padding:28px 25px;min-height:190px}.bentley-case .bc-mapping-heading{grid-template-columns:1fr 1fr;gap:10px;padding:14px 12px;font-size:10px}.bentley-case .bc-mapping-row{grid-template-columns:24px 1fr;gap:12px;padding:22px 2px}.bentley-case .bc-mapping-arrow{grid-column:2;text-align:left;line-height:.7;transform:rotate(90deg);margin:5px 0}.bentley-case .bc-mapping-decision{grid-column:2}.bentley-case .bc-hierarchy-intro{padding:24px 22px}.bentley-case .bc-hierarchy-frame{padding:30px 15px 18px}.bentley-case .bc-hier-tree:after{width:220px;left:-109px}.bentley-case .bc-hier-branches strong{font-size:17px}.bentley-case .bc-hier-branches>div{padding:17px 8px}.bentley-case .bc-hier-base{line-height:1.7}.bentley-case .bc-next-study{padding:25px;gap:17px}.bentley-case .bc-closing-quote{padding:30px 24px}.bentley-case .bc-original-image{min-height:220px;padding:15px}}
-
-  </style>
+  <link rel="stylesheet" href="../assets/bentley-case.css">
   <script src="../assets/main.js" defer></script>
 </head>
 <body class="bentley-case">
@@ -166,13 +45,13 @@
       <div class="bc-facts" aria-label="Project facts">
         <div><span>PROJECT</span><strong>BentleySafe app redesign</strong></div>
         <div><span>MY ROLE</span><strong>Researcher, designer &amp; project lead</strong></div>
-        <div><span>TEAM / DURATION</span><strong>4-person team · 3 months</strong></div>
+        <div><span>TEAM / DURATION</span><strong>4 collaborators · 3 months</strong></div>
         <div><span>FOCUS</span><strong>Safety, navigation, human factors</strong></div>
       </div>
     </section>
 
     <div class="bc-container container">
-      <nav class="bc-section-nav" aria-label="Case study sections"><span>ON THIS PAGE</span><a href="#context">The challenge</a><a href="#research">Research</a><a href="#decisions">Design response</a><a href="#role">My contribution</a><a href="#outcome">Outcome &amp; reflection</a></nav>
+      <nav class="bc-section-nav" aria-label="Case study sections"><span>ON THIS PAGE</span><a href="#context">The challenge</a><a href="#before-after">Before &amp; after</a><a href="#research">Research</a><a href="#decisions">Design response</a><a href="#role">My contribution</a><a href="#outcome">Outcome &amp; reflection</a></nav>
       <div class="bc-story">
         <section id="context" class="bc-story-section bc-section-context" aria-labelledby="context-title">
           <div class="bc-section-top"><span class="bc-section-index">01 / THE CONTEXT</span><span class="bc-mini-rule"></span></div>
@@ -184,13 +63,45 @@
           <div class="bc-question" aria-label="Central design question"><span>THE DESIGN QUESTION</span><p>If a student opens the app when something feels wrong, what should they see first?</p><i aria-hidden="true">?</i></div>
         </section>
 
-        <figure class="bc-original-visual">
-          <div class="bc-original-image"><img src="https://framerusercontent.com/images/nqWhb4T23SPV1wDHHne72I8AlU.png?height=1200&amp;width=1600" alt="Selected interface concepts from the BentleySafe redesign" loading="lazy"></div>
-          <figcaption><span>PROJECT VISUAL</span> Selected interface concepts from the BentleySafe team's redesign. The source images and additional research artifacts will be moved into the site in the next visual migration.</figcaption>
+        <figure class="bc-original-visual bc-deliverable-hero">
+          <div class="bc-original-image bc-image-white"><img src="../assets/bentley/bentley-redesign-hero.png" alt="Three proposed BentleySafe redesign screens displayed together" loading="lazy"></div>
+          <figcaption><span>SELECTED DELIVERABLE</span> High-fidelity interface concepts created in Figma to show how a stronger emergency hierarchy, clearer labels, and grouped safety tools could improve the BentleySafe experience.</figcaption>
         </figure>
 
+        <section id="before-after" class="bc-story-section" aria-labelledby="before-after-title">
+          <div class="bc-section-top"><span class="bc-section-index">02 / BEFORE &amp; AFTER</span><span class="bc-mini-rule"></span></div>
+          <h2 id="before-after-title">From a feature list that blended together<br><em>to a safety experience with clearer priority.</em></h2>
+          <p class="bc-section-lead">The original app already offered useful safety resources, but many features carried equal visual weight. Our redesign direction focused on surfacing urgent actions first, grouping related tools, and making the experience easier to scan.</p>
+          <div class="bc-compare-grid">
+            <article class="bc-compare-card">
+              <div class="bc-compare-label">WHAT WE INHERITED</div>
+              <h3>Original BentleySafe experience</h3>
+              <div class="bc-compare-media-stack">
+                <figure><img src="../assets/bentley/bentley-original-ui.png" alt="Original BentleySafe app interface screens" loading="lazy"><figcaption>The existing interface presented useful tools, but critical actions competed with everything else on the screen.</figcaption></figure>
+                <figure><img src="../assets/bentley/bentley-original-promo.png" alt="Original promotional graphic for the BentleySafe app" loading="lazy"><figcaption>The original promotional materials emphasized feature availability more than information hierarchy.</figcaption></figure>
+              </div>
+            </article>
+            <article class="bc-compare-card bc-compare-card-proposed">
+              <div class="bc-compare-label">WHAT WE PROPOSED</div>
+              <h3>Redesigned concepts</h3>
+              <div class="bc-compare-media-stack">
+                <figure><img src="../assets/bentley/bentley-redesign-trio.png" alt="Three redesigned BentleySafe interface screens showing home, emergency contacts, and safety toolbox" loading="lazy"><figcaption>The redesign gives emergency actions a clear visual entry point and organizes supporting tools under a more intuitive structure.</figcaption></figure>
+                <figure><img src="../assets/bentley/bentley-redesign-collage.png" alt="Collage of redesigned BentleySafe app screens" loading="lazy"><figcaption>Additional concept screens explored reporting, emergency contacts, and the My Safety Toolbox flow in greater detail.</figcaption></figure>
+              </div>
+            </article>
+          </div>
+          <div class="bc-improvements">
+            <div class="bc-improvements-head"><span>KEY INTERFACE SHIFTS</span><h3>What changed in the redesign</h3></div>
+            <div class="bc-improvement-list">
+              <div><strong>Emergency access became unmistakable.</strong><p>A stronger visual hierarchy helps users identify the most urgent actions immediately.</p></div>
+              <div><strong>Supporting tools found a clearer home.</strong><p>Related features were grouped into the “My Safety Toolbox” so they felt easier to locate and understand.</p></div>
+              <div><strong>Navigation aligned more closely with user expectations.</strong><p>Labels and groupings were reworked to reduce interpretation and make the app easier to scan in stressful moments.</p></div>
+            </div>
+          </div>
+        </section>
+
         <section id="research" class="bc-story-section" aria-labelledby="research-title">
-          <div class="bc-section-top"><span class="bc-section-index">02 / INVESTIGATE</span><span class="bc-mini-rule"></span></div>
+          <div class="bc-section-top"><span class="bc-section-index">03 / INVESTIGATE</span><span class="bc-mini-rule"></span></div>
           <h2 id="research-title">Three research lenses.<br><em>One clearer direction.</em></h2>
           <p class="bc-section-lead">Our approach brought together a campus survey, a comparative review of other university safety apps, and a heuristic evaluation. The methods offered complementary perspectives: which features students considered useful, how peer apps organized similar services, and where BentleySafe's interface created unnecessary uncertainty.</p>
           <div class="bc-methods">
@@ -198,11 +109,24 @@
             <div class="bc-method"><span class="bc-method-num">02</span><span class="bc-method-icon" aria-hidden="true">▤</span><h3>Comparative review</h3><p>Compare safety features across university apps, including emergency contacts, alerts, maps, and supporting services.</p></div>
             <div class="bc-method"><span class="bc-method-num">03</span><span class="bc-method-icon" aria-hidden="true">✳</span><h3>Heuristic evaluation</h3><p>Evaluate navigation labels, feature grouping, visibility, and the discoverability of time-sensitive actions.</p></div>
           </div>
-          <div class="bc-evidence-note"><span class="bc-note-mark" aria-hidden="true">↗</span><p>Our research artifacts included a feature-usefulness survey instrument and a competitive app matrix. The case study presents findings qualitatively; <strong>we did not establish a measured post-redesign usability improvement</strong>.</p></div>
+          <div class="bc-artifact-grid">
+            <figure class="bc-artifact-card">
+              <img src="../assets/bentley/bentley-survey-instrument.png" alt="Survey instrument used to ask Bentley students how useful current BentleySafe features were" loading="lazy">
+              <figcaption><span>RESEARCH ARTIFACT</span> A portion of the survey instrument used to understand how useful students perceived the app's existing features to be.</figcaption>
+            </figure>
+            <figure class="bc-artifact-card">
+              <img src="../assets/bentley/bentley-competitive-analysis.jpg" alt="Competitive analysis matrix comparing BentleySafe with other university safety apps" loading="lazy">
+              <figcaption><span>RESEARCH ARTIFACT</span> Competitive feature comparison used to understand where BentleySafe aligned with or lagged behind peer safety apps.</figcaption>
+            </figure>
+          </div>
+          <div class="bc-evidence-summary">
+            <div><span>WHAT THESE ARTIFACTS HELPED US SEE</span><ul><li>Students needed clearer paths to core safety actions.</li><li>Some existing features were valuable, but not easy to prioritize visually.</li><li>Peer apps highlighted opportunities to improve hierarchy, emergency access, and feature grouping.</li></ul></div>
+          </div>
+          <div class="bc-evidence-note"><span class="bc-note-mark" aria-hidden="true">↗</span><p>The artifacts shown above document the feature-usefulness survey and competitive review. Findings are presented qualitatively here; we did not measure a post-redesign usability improvement.</p></div>
         </section>
 
         <section id="decisions" class="bc-story-section" aria-labelledby="decisions-title">
-          <div class="bc-section-top"><span class="bc-section-index">03 / CONNECT THE DOTS</span><span class="bc-mini-rule"></span></div>
+          <div class="bc-section-top"><span class="bc-section-index">04 / CONNECT THE DOTS</span><span class="bc-mini-rule"></span></div>
           <h2 id="decisions-title">From what we learned<br><em>to what we changed.</em></h2>
           <p class="bc-section-lead">Instead of leaving research as a list of usability problems, we translated it into three related design priorities. Each responds to something that made the existing experience harder to interpret.</p>
           <div class="bc-mapping" aria-label="Research findings and corresponding design decisions">
@@ -227,12 +151,12 @@
         </section>
 
         <section id="role" class="bc-story-section" aria-labelledby="role-title">
-          <div class="bc-section-top"><span class="bc-section-index">04 / MY CONTRIBUTION</span><span class="bc-mini-rule"></span></div>
+          <div class="bc-section-top"><span class="bc-section-index">05 / MY CONTRIBUTION</span><span class="bc-mini-rule"></span></div>
           <div class="bc-role-grid"><div><h2 id="role-title">My role connected research to decisions.</h2><p class="bc-section-lead">As the UX/UI researcher, designer, and project lead within a four-person team, I helped connect what we learned to the recommendations and proposed interface.</p></div><div class="bc-contribution-list"><div><span>01</span><p>Brought together survey, comparative, and heuristic perspectives to identify common themes.</p></div><div><span>02</span><p>Helped prioritize improvements to emergency visibility, feature labeling, and navigation.</p></div><div><span>03</span><p>Connected those findings to information architecture and screen concepts within the existing platform's constraints.</p></div></div></div>
         </section>
 
         <section id="outcome" class="bc-story-section bc-outcome" aria-labelledby="outcome-title">
-          <div class="bc-section-top"><span class="bc-section-index">05 / WHAT CAME OUT OF IT</span><span class="bc-mini-rule"></span></div>
+          <div class="bc-section-top"><span class="bc-section-index">06 / WHAT CAME OUT OF IT</span><span class="bc-mini-rule"></span></div>
           <h2 id="outcome-title">A clearer path to help.<br><em>A proposal grounded in research.</em></h2>
           <div class="bc-columns-text"><p>Our team delivered a redesigned BentleySafe interface concept and recommendations focused on making emergency options more visible, navigation more predictable, and related resources easier to locate. The work connected research observations with concrete design decisions.</p><p>The outcome was a proposed redesign, not a documented university launch. We did not measure post-redesign task performance or emergency outcomes; usability testing would be needed to validate those impacts.</p></div>
           <div class="bc-next-study"><div><span>IF THIS MOVED INTO THE NEXT PHASE</span><h3>What I would validate next</h3></div><ul><li>Can users find emergency contacts without hesitation?</li><li>Do revised labels align with user expectations?</li><li>Can people distinguish urgent and supporting features at a glance?</li></ul></div>
